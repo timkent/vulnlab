@@ -19,6 +19,7 @@ $ curl http://x.x.x.x:5000
 <html>
   <head>
     <title>VulnLab</title>
+  </head>
   <body>
     <h1>Reset</h1>
     <a href="/reset/alice">alice</a><br>
