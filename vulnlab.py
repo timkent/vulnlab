@@ -36,6 +36,7 @@ def main():
 <html>
   <head>
     <title>VulnLab</title>
+  </head>
   <body>
     <h1>Reset</h1>
 '''
