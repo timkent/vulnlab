@@ -11,6 +11,26 @@ Please note this was written as a proof of concept and does not have sufficient 
 
 You will need to configure your ESX host details and the name of your control VM within the script. By default, the web server will listen on port 5000.
 
+Here is example output (obviously it will look prettier from a graphical web browser):
+
+```html
+$ curl http://x.x.x.x:5000
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VulnLab</title>
+  <body>
+    <h1>Reset</h1>
+    <a href="/reset/alice">alice</a><br>
+    <a href="/reset/pain">pain</a><br>
+    <a href="/reset/sufferance">sufferance</a><br>
+  </body>
+</html>
+
+$ curl http://x.x.x.x:5000/reset/pain
+OK
+```
+
 # Intended Use
 
 Configure the lab machines so their hard drives are in "Independent - Non-persistent" mode. This means any disk changes to any of the lab VMs will not persist after a reset/power cycle.
