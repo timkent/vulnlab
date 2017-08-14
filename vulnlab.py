@@ -7,7 +7,6 @@
 
 from flask import Flask
 from pyVim import connect
-from pyVmomi import vmodl
 from pyVmomi import vim
 
 # details for your ESX host:
